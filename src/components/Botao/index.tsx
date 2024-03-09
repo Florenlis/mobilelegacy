@@ -1,7 +1,8 @@
-import {TouchableOpacity} from "react-native"
+import {TouchableOpacity,TouchableOpacityProps} from "react-native"
+import {styles} from "./style"
 
-export function Botao() {
+export function Botao(rest:TouchableOpacityProps) {
     return(
-        <TouchableOpacity/>
+        <TouchableOpacity style={styles.butao} {...rest}/>
     )
 }
