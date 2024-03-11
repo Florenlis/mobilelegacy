@@ -5,14 +5,10 @@ import { styleContainer } from "../../styles/globalstyle";
 import { Ipagina } from "../../../App"
 import { Botao } from "../../components/Botao"
 
-export function Inicial({ setpageI }: Ipagina) {
-   const Rw = require('../../assets/hogwarts.png')
-   const sg = require('../../assets/harry.png')
+export function Dois({ setpageI }: Ipagina) {
+   const Rw = require('../../assets/harry.png')
     return (
       <ImageBackground source={Rw} style={styleContainer.container}>
-         <View>
-            <Image source={sg}></Image>
-         </View>
       <View style={styles.butao}>    
       <Botao onPress={() => setpageI(1)} />
       <Botao onPress={() => setpageI(2)} />

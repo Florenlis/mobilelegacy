@@ -12,7 +12,6 @@ export const styles = StyleSheet.create({
 
     },
     butao: {
-
         flexDirection: "row",
         marginBottom: 20,
         alignItems: "center",

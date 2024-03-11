@@ -1,13 +1,18 @@
 import {StyleSheet} from "react-native"
-import {colors} from "../../styles/colors"
+import {colors} from "../../styles/globalstyle"
 
 export const styles = StyleSheet.create({
    butao: {
-      width: 40,
-      height:40,
-      borderRadius:20,
-      backgroundColor: colors.gray
-
+      width: 25,
+      height:25,
+      borderRadius:30,
+      margin: 10,
+      backgroundColor: colors.gray,
+      flexDirection: "row",
+      marginBottom: 10,
+      alignItems: "center",
+      justifyContent: "center",
+      
    }
 
 
