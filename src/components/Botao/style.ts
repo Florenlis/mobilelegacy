@@ -8,10 +8,7 @@ export const styles = StyleSheet.create({
       borderRadius:30,
       margin: 10,
       backgroundColor: colors.gray,
-      flexDirection: "row",
-      marginBottom: 10,
-      alignItems: "center",
-      justifyContent: "center",
+
       
    }
 

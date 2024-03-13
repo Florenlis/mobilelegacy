@@ -1,6 +1,6 @@
 import React from "react";
 import { ImageBackground, Image, View } from "react-native"
-import { styles } from "../../screens/Tres/styles";
+import { styles } from "../../screens/Quatro/styles";
 import { styleContainer } from "../../styles/globalstyle";
 import { Ipagina } from "../../../App"
 import { Botao } from "../../components/Botao"

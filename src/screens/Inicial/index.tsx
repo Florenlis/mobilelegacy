@@ -1,6 +1,6 @@
 import React from "react";
 import { ImageBackground, Image, View } from "react-native"
-import { styles } from "../../screens/Tres/styles";
+import { styles } from "../../screens/Inicial/styles";
 import { styleContainer } from "../../styles/globalstyle";
 import { Ipagina } from "../../../App"
 import { Botao } from "../../components/Botao"
@@ -10,10 +10,10 @@ export function Inicial({ setpageI }: Ipagina) {
    const sg = require('../../assets/harry.png')
     return (
       <ImageBackground source={Rw} style={styleContainer.container}>
-         <View>
+         <View style={styles.legacy}>
             <Image source={sg}></Image>
          </View>
-      <View style={styles.butao}>    
+      <View style={styles.ball}>    
       <Botao onPress={() => setpageI(1)} />
       <Botao onPress={() => setpageI(2)} />
       <Botao onPress={() => setpageI(3)} />

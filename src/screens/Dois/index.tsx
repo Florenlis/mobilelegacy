@@ -1,14 +1,18 @@
 import React from "react";
 import { ImageBackground, Image, View } from "react-native"
-import { styles } from "../../screens/Tres/styles";
+import { styles } from "../../screens/Dois/styles";
 import { styleContainer } from "../../styles/globalstyle";
 import { Ipagina } from "../../../App"
 import { Botao } from "../../components/Botao"
 
 export function Dois({ setpageI }: Ipagina) {
-   const Rw = require('../../assets/harry.png')
+   const Fd = require('../../assets/fundoslidedois.png')
+   const Fg = require('../../assets/grifinoria.png')
     return (
-      <ImageBackground source={Rw} style={styleContainer.container}>
+      <ImageBackground source={Fd} style={styleContainer.container}>
+          <View style={styles.legacy}>
+            <Image source={Fg}></Image>
+         </View>
       <View style={styles.butao}>    
       <Botao onPress={() => setpageI(1)} />
       <Botao onPress={() => setpageI(2)} />
