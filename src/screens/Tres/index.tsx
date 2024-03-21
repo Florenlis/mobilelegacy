@@ -6,9 +6,13 @@ import { Ipagina } from "../../../App"
 import { Botao } from "../../components/Botao"
 
 export function Tres({ setpageI }: Ipagina) {
-   const Rw = require('../../assets/harry.png')
+   const Fs = require('../../assets/fundoslidetres.png')
+   const Fss = require('../../assets/sonserina.png')
     return (
-      <ImageBackground source={Rw} style={styleContainer.container}>
+      <ImageBackground source={Fs} style={styleContainer.container}>
+          <View style={styles.legacy}>
+            <Image source={Fss}></Image>
+         </View>
       <View style={styles.butao}>    
       <Botao onPress={() => setpageI(1)} />
       <Botao onPress={() => setpageI(2)} />
@@ -19,10 +23,6 @@ export function Tres({ setpageI }: Ipagina) {
 
     )
 }
-
-
-
-
 
 
 

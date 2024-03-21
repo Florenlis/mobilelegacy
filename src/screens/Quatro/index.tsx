@@ -6,9 +6,13 @@ import { Ipagina } from "../../../App"
 import { Botao } from "../../components/Botao"
 
 export function Quatro({ setpageI }: Ipagina) {
-   const Rw = require('../../assets/harry.png')
+   const Fl = require('../../assets/fundoslidequatro.png')
+   const Fll = require('../../assets/lufalufa.png')
     return (
-      <ImageBackground source={Rw} style={styleContainer.container}>
+      <ImageBackground source={Fl} style={styleContainer.container}>
+          <View style={styles.legacy}>
+            <Image source={Fll}></Image>
+         </View>
       <View style={styles.butao}>    
       <Botao onPress={() => setpageI(1)} />
       <Botao onPress={() => setpageI(2)} />
